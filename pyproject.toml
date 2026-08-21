@@ -1,0 +1,17 @@
+[project]
+name = "wsb-signal-trader-api-review"
+version = "0.1.0"
+description = "Sanitized read-only Reddit API integration review package"
+requires-python = ">=3.12"
+dependencies = [
+  "aiohttp>=3.11,<4",
+]
+
+[project.optional-dependencies]
+dev = [
+  "pytest>=8.3,<10",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
